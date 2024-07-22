@@ -3,23 +3,28 @@ import React from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Counter from "./pages/Counter";
-import About from "./pages/About";
+import Skill from "./pages/Skill";
 import Gallery from "./pages/Gallery/Gallery";
 import Home from "./pages/Home";
 import GallerySingle from "./pages/Gallery/GallerySingle";
 import MasterHeader from "./components/MasterHeader";
 import Footer from "./components/Footer";
-import Clients from "./components/Clients";
-import Team from "./components/Team";
-import Services from "./components/Services";
+import Clients from "./pages/Clients";
+import Team from "./pages/Team";
+import Services from "./pages/Services";
+import About from "./pages/About";
 
 function App() {
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
         {path: '/', element: <Home/>},
+        {path: '/services', element: <Services/>},
         {path: '/counter', element: <Counter/>},
-        {path: '/about', element: <About/>},
-        {path: '/gallery', element: <Gallery/>},
+        {path: '/apropos', element: <About/>},
+        {path: '/galerie', element: <Gallery/>},
+        {path: '/detail/:id', element: <GallerySingle/>},
+        {path: '/team', element: <Team/>},
+        {path: '/skill', element: <Skill/>},
 
     ];
 
@@ -42,19 +47,11 @@ function App() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                                {/*<li key={routs.id}*/}
-                                {/*    className="nav-item"><Link to="/">Home</Link></li>*/}
-                                {/*<li key={routs.id}*/}
-                                {/*    className="nav-link"><Link to="/counter">Counter</Link></li>*/}
-                                {/*<li key={routs.id}*/}
-                                {/*    className="nav-link"><Link to="/about">About</Link></li>*/}
-                                {/*<li key={routs.id}*/}
-                                {/*    className="nav-link"><Link to="/gallery">Gallery</Link></li>*/}
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/gallery">Galerie</Link></li>
+                                {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>*/}
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/galerie">Galerie</Link></li>
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" to="/counter">Counter</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/apropos">A propos</Link></li>
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" href="/team">Team</Link></li>
                                 {/*<li key={routs.id} className="nav-item"><Link className="nav-link" href="/contact">Contact</Link></li>*/}
                             </ul>
@@ -66,13 +63,13 @@ function App() {
                     <Routes>
                         <Route exact path="/" element={<Home/>}/>
                         <Route path="/counter" element={<Counter/>}/>
-                        <Route path="/about" element={<About inputMessage="Presentation CV"/>}/>
+                        <Route path="/about" element={<Skill inputMessage="Presentation CV"/>}/>
                         <Route path="/gallery" element={<Gallery/>}/>
                         <Route path="/detail/:id" element={<GallerySingle/>}/>
                     </Routes>
                 </div>
             </div>
-            <Services/>
+            {/*<Services/>*/}
             {/*<About/>*/}
 
             {/*<Team/>*/}
