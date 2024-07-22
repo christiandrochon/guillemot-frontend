@@ -13,12 +13,21 @@ import Clients from "./pages/Clients";
 import Team from "./pages/Team";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import Maconnerie from "./pages/Maconnerie";
+import Charpente from "./pages/Charpente";
+import Piscine from "./pages/Piscine";
+import {Tab} from "@mui/material";
+import TaillePierre from "./pages/TaillePierre";
 
 function App() {
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
         {path: '/', element: <Home/>},
-        {path: '/services', element: <Services/>},
+        // {path: '/services', element: <Services/>},
+        {path: '/maconnerie', element: <Maconnerie/>},
+        {path: '/charpente', element: <Charpente/>},
+        {path: '/taillepierre', element: <TaillePierre/>},
+        {path: '/piscine', element: <Piscine/>},
         {path: '/counter', element: <Counter/>},
         {path: '/apropos', element: <About/>},
         {path: '/galerie', element: <Gallery/>},
@@ -49,10 +58,15 @@ function App() {
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                                 {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>*/}
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/maconnerie">Maconnerie</Link></li>
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/charpente">Charpente, couverture</Link></li>
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/piscine">Piscine</Link></li>
+                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/taillepierre">Taille de pierre</Link></li>
+
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" to="/galerie">Galerie</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/counter">Counter</Link></li>
+                                {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/counter">Counter</Link></li>*/}
                                 <li key={routs.id} className="nav-item"><Link className="nav-link" to="/apropos">A propos</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" href="/team">Team</Link></li>
+                                {/*<li key={routs.id} className="nav-item"><Link className="nav-link" href="/team">Team</Link></li>*/}
                                 {/*<li key={routs.id} className="nav-item"><Link className="nav-link" href="/contact">Contact</Link></li>*/}
                             </ul>
                         </div>
@@ -62,9 +76,18 @@ function App() {
                 <div className="container">
                     <Routes>
                         <Route exact path="/" element={<Home/>}/>
-                        <Route path="/counter" element={<Counter/>}/>
+                        <Route path="/maconnerie" element={<Maconnerie/>}/>
+                        <Route path="/charpente" element={<Charpente/>}/>
+                        <Route path="/taillepierre" element={<TaillePierre/>}/>
+                        <Route path="/piscine" element={<Piscine/>}/>
+                        <Route path="/skill" element={<Skill/>}/>
+                        <Route path="/team" element={<Team/>}/>
+                        <Route path="/services" element={<Services/>}/>
+                        <Route path="/apropos" element={<About/>}/>
+
+                        {/*<Route path="/counter" element={<Counter/>}/>*/}
                         <Route path="/about" element={<Skill inputMessage="Presentation CV"/>}/>
-                        <Route path="/gallery" element={<Gallery/>}/>
+                        <Route path="/galerie" element={<Gallery/>}/>
                         <Route path="/detail/:id" element={<GallerySingle/>}/>
                     </Routes>
                 </div>
