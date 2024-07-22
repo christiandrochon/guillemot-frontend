@@ -2,6 +2,7 @@
 
 #jetbrains
 *.iml
+*.xml
 
 # dependencies
 /node_modules
