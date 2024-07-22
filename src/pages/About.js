@@ -1,147 +1,81 @@
 import React, {Component} from 'react';
-import SkillForm from "./SkillForm";
 
 class About extends Component {
-
-
-    /**
-     * Sert à passer des param entre composant
-     * 'contact' et 'skills sont des objets
-     * @param props
-     */
-    constructor(props) {
-        super(props);
-        this.state = {
-            contact: {
-                name: 'Kiki', email: 'kiki@kiki.fr', picture: './images/sleepy-cat.jpg'
-            },
-            skills: [
-                {id: 1, title: 'java'},
-                {id: 2, title: 'react'},
-                {id: 3, title: 'angular'},
-                {id: 4, title: 'flutter'}
-            ],
-            skillValue: ''
-        };
-    }
-
-
-    /**
-     * Construction d'un objet 'skill' et à la liste des skills existantes
-     * Prise en charge d'une liste de competences vide
-     *
-     * !!! La notation 'skills:[...this.state.skills]' correspond à la copie d'un tableau de les elements/objets existant. A ce tableau, j'insere à la fin un nouvel ig grace à
-     * 'id', et dont la valeur est egale à 'title'
-     */
-    onAddNewSkill = (event) => {
-        this.setState((prevState) => {
-            let newSkill = {
-                id: prevState.skills.length > 0 ? prevState.skills[prevState.skills.length - 1].id + 1 : 0,
-                title: event
-            };
-            return {skills: [...prevState.skills, newSkill]};
-        });
-    };
-    // onAddNewSkill = (event) => {
-    // 	if (this.state.skills.length === 0) {
-    // 		this.state.skills = [];
-    // 		let skill = {
-    // 			id: 0,
-    // 			title: event
-    // 		};
-    // 		this.setState({
-    // 			skills: [...this.state.skills, skill]
-    // 		})
-    // 	}
-    // 	else {
-    // 		let skill = {
-    // 			id: [...this.state.skills].pop().id + 1,
-    // 			title: event
-    // 		};
-    // 		this.setState({
-    // 			skills: [...this.state.skills, skill]
-    // 		})
-    // 	}
-    // };
-
-    /**
-     * Supression dune competence de la liste
-     *
-     * En param, on doit mettre la competence à supprimer et non pas l'index. C'est la competence ('skill') envoyé depuis le DOM qui sera utilisé par indexOf()
-     * La methode 'slice()' supprime la skill voulue
-     **/
-    onDeleteSkill(skill) {
-        let index = this.state.skills.indexOf(skill);
-        let skills = [...this.state.skills];
-        skills.splice(index, 1);
-        this.setState({
-            skills: skills
-        })
-    }
-
-    /*componentDidCatch(error, errorInfo) { console.log("")
-    }
-    componentDidMount() {console.log("About did mount")
-    }
-    componentDidUpdate(prevProps, prevState, snapshot) { console.log("About did update")
-    }
-    componentWillUnmount() { console.log("About will unmount")
-    }*/
-
-
     render() {
         return (
-            <div className="card ">
-                <div className="card-header">
-                    <label><b>{this.props.inputMessage} </b></label>
-                </div>
-                <div className="row p-2">
-                    <div className="col col-auto">
-                        <img width={120} src="./images/sleepy-cat.jpg" className="profile img-thumbnail" alt="Profil"/>
+            <section className="page-section" id="about">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="section-heading text-uppercase">About</h2>
+                        <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
-                    <div className="col">
-                        <ul className="list-group">
-                            <li className="list-group-item"><b>Nom : </b>{this.state.contact.name}</li>
-                            <li className="list-group-item"><b>Email : </b>{this.state.contact.email}</li>
-                        </ul>
-                    </div>
-                    <div className="card">
-                        <div className="card-header">Skills</div>
-                        <div className="card-body">
-                            <div>
-                                <SkillForm onAddNewSkill={this.onAddNewSkill}/>
+                    <ul className="timeline">
+                        <li>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="/template/assets/img/about/1.jpg" alt="..."/>
                             </div>
-                            {/*		<form onSubmit={this.addSkill}>
-							 <div>
-							 <input type="text" name="skill"/>
-							 <button className="btn btn-primary">Add</button>
-							 </div>
-							 </form>*/}
-
-                            <table className="table">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Title</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {this.state.skills.map((skill, index) =>
-                                    <tr key={skill.id}>
-                                        <td>{skill.id}</td>
-                                        <td>{skill.title}</td>
-                                        <td>
-                                            <button key={skill.id} className="btn btn-danger text-white" onClick={() => this.onDeleteSkill(skill)}>X</button>
-                                        </td>
-                                    </tr>
-                                )}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 className="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                                    dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="/template/assets/img/about/2.jpg" alt="..."/>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 className="subheading">An Agency is Born</h4>
+                                </div>
+                                <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                                    dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="/template/assets/img/about/3.jpg" alt="..."/>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>December 2015</h4>
+                                    <h4 className="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                                    dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="/template/assets/img/about/4.jpg" alt="..."/>
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>July 2020</h4>
+                                    <h4 className="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div className="timeline-body"><p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                                    dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li className="timeline-inverted">
+                            <div className="timeline-image">
+                                <h4>
+                                    Be Part
+                                    <br/>
+                                    Of Our
+                                    <br/>
+                                    Story!
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
+            </section>
         );
     }
 }

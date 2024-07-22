@@ -17,10 +17,10 @@ class Services extends Component {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="assets/img/portfolio/1.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/istockphoto-677739506-1024x1024.jpg" alt="img 1"/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Threads</div>
+                                    <div className="portfolio-caption-heading">Maconnerie</div>
                                     <div className="portfolio-caption-subheading text-muted">Illustration</div>
                                 </div>
                             </div>
@@ -32,10 +32,10 @@ class Services extends Component {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="/template/assets/img/portfolio/2.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="img 2"/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Explore</div>
+                                    <div className="portfolio-caption-heading">Charpente, couverture</div>
                                     <div className="portfolio-caption-subheading text-muted">Graphic Design</div>
                                 </div>
                             </div>
@@ -47,10 +47,10 @@ class Services extends Component {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="/template/assets/img/portfolio/3.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/infinity-pool-2396808_960_720.jpg" alt="img 3"/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Finish</div>
+                                    <div className="portfolio-caption-heading">Piscine</div>
                                     <div className="portfolio-caption-subheading text-muted">Identity</div>
                                 </div>
                             </div>
@@ -62,10 +62,10 @@ class Services extends Component {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="/template/assets/img/portfolio/4.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/statues-273745_960_720.jpg" alt="..."/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Lines</div>
+                                    <div className="portfolio-caption-heading">Tailleur de pierre</div>
                                     <div className="portfolio-caption-subheading text-muted">Branding</div>
                                 </div>
                             </div>
@@ -77,10 +77,10 @@ class Services extends Component {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="/template/assets/img/portfolio/5.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/frame-2590772_960_720.jpg" alt="..."/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Southwest</div>
+                                    <div className="portfolio-caption-heading">Galerie</div>
                                     <div className="portfolio-caption-subheading text-muted">Website Design</div>
                                 </div>
                             </div>
