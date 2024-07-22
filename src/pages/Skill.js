@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SkillForm from "./SkillForm";
 
-class About extends Component {
+class Skill extends Component {
 
 
     /**
@@ -146,4 +146,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Skill;
