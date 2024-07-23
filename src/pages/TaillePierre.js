@@ -7,7 +7,7 @@ class TaillePierre extends Component {
         return (
             <section className="page-section bg-light" id="portfolio">
                 <div className="container">
-                    <div className="text-center">
+                    <div className="text-center containerAvecMarges">
                         <h2 className="section-heading text-uppercase">Tailleur de pierre</h2>
                         <h3 className="section-subheading text-muted">Travail sur pierres et briquettes soulacaises.</h3>
 

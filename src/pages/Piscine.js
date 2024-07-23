@@ -6,7 +6,7 @@ class Piscine extends Component {
         return (
             <section className="page-section bg-light">
                 <div className="container">
-                    <div className="text-center">
+                    <div className="text-center containerAvecMarges">
                         <h2 className="section-heading text-uppercase">Piscine</h2>
                         <h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>
 

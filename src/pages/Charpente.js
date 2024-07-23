@@ -7,7 +7,7 @@ class Charpente extends Component {
         return (
             <section className="page-section bg-light" id="portfolio">
                 <div className="container">
-                    <div className="text-center">
+                    <div className="text-center containerAvecMarges">
                         <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
                         <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
 

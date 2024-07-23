@@ -1,7 +1,9 @@
 /*PLACEMENT DES ÉLÉMENTS*/
 .containerAvecMarges {
-   padding-right: 5em;
-    padding-left: 5em;
+    margin-right: 3em;
+    margin-left: 3em;
+   /*padding-right: 2em;*/
+   /* padding-left: 2em;*/
 }
 .listeSansPuces {
     list-style-type: none !important; /* Supprime les puces */
@@ -9,6 +11,10 @@
 
 p {
     font-size: 1.25rem; /* Taille équivalente à fs-5 dans Bootstrap */
+}
+.mailto {
+    /*color: var(--bs-primary);*/
+    color: blue;
 }
 
 /*SURBRILLANCE DES TAB DE MENU */

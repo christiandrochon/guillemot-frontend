@@ -16,15 +16,6 @@ import Contact from "./pages/Contact";
 
 function App() {
 
-    // État pour suivre l'onglet actif
-    const [activeTab, setActiveTab] = useState('home');
-
-    // Fonction pour changer l'onglet actif
-    const handleTabChange = (tab) => {
-        setActiveTab(tab);
-    };
-
-
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
         {path: '/', element: <Home/>},
@@ -32,8 +23,8 @@ function App() {
         {path: '/charpente', element: <Charpente/>},
         {path: '/taillepierre', element: <TaillePierre/>},
         {path: '/piscine', element: <Piscine/>},
-        {path: '/apropos', element: <About/>},
-        {path: '/team', element: <Team/>},
+        // {path: '/apropos', element: <About/>},
+        // {path: '/team', element: <Team/>},
         {path: '/contact', element: <Contact/>},
 
     ];
@@ -71,10 +62,10 @@ function App() {
                                                                              to="/taillepierre">Taille de pierre</NavLink></li>
 
                             {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/galerie">Galerie</Link></li>*/}
-                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
-                                                                             to="/apropos">A propos</NavLink></li>
-                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
-                                                                             to="/team">Team</NavLink></li>
+                            {/*<li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}*/}
+                            {/*                                                 to="/apropos">A propos</NavLink></li>*/}
+                            {/*<li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}*/}
+                            {/*                                                 to="/team">Team</NavLink></li>*/}
                             <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                                                                              to="/contact">Contact</NavLink></li>
                         </ul>
@@ -90,8 +81,8 @@ function App() {
             <Route path="/charpente" element={<Charpente/>}/>
             <Route path="/piscine" element={<Piscine/>}/>
             <Route path="/taillepierre" element={<TaillePierre/>}/>
-            <Route path="/apropos" element={<About/>}/>
-            <Route path="/team" element={<Team/>}/>
+            {/*<Route path="/apropos" element={<About/>}/>*/}
+            {/*<Route path="/team" element={<Team/>}/>*/}
             <Route path="/contact" element={<Contact/>}/>
         </Routes>
     </div>
