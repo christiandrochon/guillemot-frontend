@@ -9,6 +9,15 @@
     list-style-type: none !important; /* Supprime les puces */
 }
 
+.container-marges-texte {
+    max-width: fit-content; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 0 3em 0 3em; /* Ajoutez un peu de padding si nécessaire */
+}
+.container-marges-images {
+    padding: 0 4em 0 4em; /* Ajoutez un peu de padding si nécessaire */
+}
+
 p {
     font-size: 1.25rem; /* Taille équivalente à fs-5 dans Bootstrap */
 }

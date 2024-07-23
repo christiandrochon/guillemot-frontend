@@ -5,8 +5,8 @@ class Piscine extends Component {
     render() {
         return (
             <section className="page-section bg-light">
-                <div className="container">
-                    <div className="text-center containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center">
                         <h2 className="section-heading text-uppercase">Piscine</h2>
                         <h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>
 
@@ -39,7 +39,7 @@ class Piscine extends Component {
 
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid"/>
+                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid container-marges-images"/>
                     </div>
                 </div>
             </section>

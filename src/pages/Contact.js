@@ -5,8 +5,8 @@ class Contact extends Component {
     render() {
         return (
             <section className="page-section bg-light" id="portfolio">
-                <div className="container">
-                    <div className="text-center containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center">
                         <h2 className="section-heading text-uppercase">Contact</h2>
                         <h3 className="section-subheading text-muted">Nous sommes là pour vous aider.</h3>
                         <p className="pb-4">Cliquez pour nous appeler au <a className="mailto" href="tel:+33678271188"><h2>06 78 27 11 88</h2></a>
@@ -27,7 +27,7 @@ class Contact extends Component {
 
 
                         <svg className="my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/contact-us-banner.jpeg" alt="contact" className="img-fluid"/>
+                        <img src="/template/assets/img/contact-us-banner.jpeg" alt="contact" className="img-fluid container-marges-images"/>
                     </div>
                 </div>
             </section>

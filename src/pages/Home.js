@@ -12,8 +12,8 @@ class Home extends Component {
     render() {
         return (
             <section className="page-section bg-light">
-                <div className="container">
-                    <div className="text-center pb-5 containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center pb-5">
                         <h2 className="section-heading text-uppercase">SARL GUILLEMOT Père et fils</h2>
                         <h3 className="section-subheading text-muted">Votre expert en construction et rénovation : maçonnerie, charpente, piscines et taille de
                             pierre sur mesure.</h3>

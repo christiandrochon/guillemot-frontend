@@ -6,8 +6,8 @@ class TaillePierre extends Component {
     render() {
         return (
             <section className="page-section bg-light" id="portfolio">
-                <div className="container">
-                    <div className="text-center containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center">
                         <h2 className="section-heading text-uppercase">Tailleur de pierre</h2>
                         <h3 className="section-subheading text-muted">Travail sur pierres et briquettes soulacaises.</h3>
 
@@ -29,7 +29,7 @@ class TaillePierre extends Component {
                         {/*<p>Elle saura faire de la restauration de murs en pierre, le ravalement, le traitement des murs , le jointage.</p>*/}
                         {/*<p>Elle effectue la taille de pierre pour les encadrements de portes et de fenêtres, les linteaux, les appuis de fenêtres, les </p>*/}
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/statues-273745_960_720.jpg" alt="statues" className="img-fluid"/>
+                        <img src="/template/assets/img/statues-273745_960_720.jpg" alt="statues" className="img-fluid container-marges-images"/>
                     </div>
                 </div>
             </section>

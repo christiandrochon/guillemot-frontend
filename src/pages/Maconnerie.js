@@ -6,8 +6,8 @@ class Maconnerie extends Component {
     render() {
         return (
             <section className="page-section bg-light" id="portfolio">
-                <div className="container">
-                    <div className="text-center containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center">
                         <h2 className="section-heading text-uppercase">Maçonnerie</h2>
                         <h3 className="section-subheading text-muted">Travaux de construction et de démolition.</h3>
 
@@ -24,7 +24,7 @@ class Maconnerie extends Component {
                             matériaux et des techniques de construction.</p>
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/istockphoto-886676118-2048x2048.webp" alt="Description de l'image" className="img-fluid"/>
+                        <img src="/template/assets/img/istockphoto-886676118-2048x2048.webp" alt="Description de l'image" className="img-fluid container-marges-images"/>
                     </div>
                 </div>
             </section>

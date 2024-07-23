@@ -6,8 +6,8 @@ class Charpente extends Component {
     render() {
         return (
             <section className="page-section bg-light" id="portfolio">
-                <div className="container">
-                    <div className="text-center containerAvecMarges">
+                <div className="container container-marges-texte">
+                    <div className="text-center">
                         <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
                         <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
 
@@ -40,7 +40,7 @@ class Charpente extends Component {
                         <p>Traitement des toitures</p>
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid"/>
+                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid container-marges-images"/>
                     </div>
                 </div>
             </section>
