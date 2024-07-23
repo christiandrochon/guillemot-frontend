@@ -43,7 +43,7 @@ function App() {
                             <a className="navbar-brand" href="/">
                                 {/*<img src="/template/assets/img/png-clipart-logo-handicraft-graphics-artisan.png" alt="logo guillemot"/>*/}
                                 {/*<img src="/template/assets/img/navbar-logo.svg" alt="logo bootstrap"/>*/}
-                                <img src="/template/assets/img/logo_complet.png" alt="..."/>
+                                {/*<img src="/template/assets/img/logo_complet.png" alt="..."/>*/}
                             </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@ function App() {
                                                                                      to="/">Accueil</NavLink></li>
                                     <li key={routs.id}
                                         className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
-                                                                      to="/maconnerie">Maconnerie</NavLink></li>
+                                                                      to="/maconnerie">Maçonnerie</NavLink></li>
                                     <li key={routs.id}
                                         className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to="/charpente">Charpente,
                                         couverture</NavLink></li>

@@ -18,19 +18,18 @@ class Home extends Component {
         return (
 
             <section className="page-section bg-light">
-                {/*<MasterHeader titre="SARL GUILLEMOT Père et fils" sousTitre="Votre expert en construction et rénovation"/>*/}
                 <div className="container">
                     <div className="text-center pb-5">
-                        <div className="masthead-heading text-uppercase">{titre}</div>
-                        <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-heading">{titre}</div>
+                        <div className="masthead-subheading text-uppercase">{sousTitre}</div>
                         {/*<h2 className="section-heading text-uppercase">SARL GUILLEMOT Père et fils</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Votre expert en construction et rénovation : maçonnerie, charpente, piscines et taille de*/}
                         {/*    pierre sur mesure.</h3>*/}
 
 
                         <div className="container-marges-texte">
-                            <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui perdure depuis cinq
-                                générations.
+                            <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui se perpétue de père en fils
+                                depuis cinq générations.
                                 <br/>
                                 Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la
                                 construction.</Typography>

@@ -42,7 +42,7 @@ class Maconnerie extends Component {
                                 matériaux et des techniques de construction.</p>
                         </div>
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/istockphoto-886676118-2048x2048.webp" alt="Description de l'image" className="img-fluid"/>
+                        <img src="/template/assets/img/60728329_l.jpg" alt="chantier" className="img-fluid logo-img-fluid"/>
                     </div>
                 </div>
             </section>

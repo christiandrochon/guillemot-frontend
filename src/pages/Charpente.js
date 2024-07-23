@@ -53,7 +53,7 @@ class Charpente extends Component {
                             <p>Traitement des toitures</p>
                         </div>
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid"/>
+                        <img src="/template/assets/img/charpente_bois.jpg" alt="Charpente" className="img-fluid"/>
                     </div>
                 </div>
             </section>

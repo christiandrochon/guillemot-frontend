@@ -19,8 +19,6 @@ class TaillePierre extends Component {
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
-                        {/*<h2 className="section-heading text-uppercase">Tailleur de pierre</h2>*/}
-                        {/*<h3 className="section-subheading text-muted">Travail sur pierres et briquettes soulacaises.</h3>*/}
 
                         <div className="container-marges-texte">
                             <Typography variant="h5" className="pb-5">Artisanat et expertise pour des réalisations sur mesure et de haute qualité.</Typography>
@@ -41,7 +39,7 @@ class TaillePierre extends Component {
                         </div>
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/statues-273745_960_720.jpg" alt="statues" className="img-fluid"/>
+                        <img src="/template/assets/img/murs-porteurs_monolithe_1.jpg" alt="statues" className="img-fluid"/>
                     </div>
                 </div>
             </section>
