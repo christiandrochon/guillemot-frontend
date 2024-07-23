@@ -74,11 +74,11 @@ class Home extends Component {
                             {/*PORTFOLIO ITME 1*/}
                             <div className="portfolio-item">
                                 <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                    <img className="img-fluid" src="/template/assets/img/istockphoto-677739506-1024x1024.jpg" alt="img 1"/>
+                                    <img className="img-fluid" src="/template/assets/img/0506aff5-461d-4dd7-a091-2c0b3340f32b-1600-1920w.webp" alt="img 1"/>
                                 </a>
                                 <div className="portfolio-caption">
-                                    <div className="portfolio-caption-heading">Maconnerie</div>
-                                    <div className="portfolio-caption-subheading text-muted">Illustration</div>
+                                    <div className="portfolio-caption-heading">Maçonnerie</div>
+                                    <div className="portfolio-caption-subheading text-muted">Chantier</div>
                                 </div>
                             </div>
                         </div>
@@ -86,11 +86,11 @@ class Home extends Component {
                             {/*PORTFOLIO ITEM 2*/}
                             <div className="portfolio-item">
                                 <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                    <img className="img-fluid" src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="img 2"/>
+                                    <img className="img-fluid" src="/template/assets/img/1632832547-charpente-bois-min.avif" alt="img 2"/>
                                 </a>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Charpente, couverture</div>
-                                    <div className="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                    <div className="portfolio-caption-subheading text-muted">Armature</div>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ class Home extends Component {
                                 </a>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Piscine</div>
-                                    <div className="portfolio-caption-subheading text-muted">Identity</div>
+                                    <div className="portfolio-caption-subheading text-muted">Détente</div>
                                 </div>
                             </div>
                         </div>
@@ -110,11 +110,11 @@ class Home extends Component {
                             {/*PORTFOLIO ITEM 4*/}
                             <div className="portfolio-item">
                                 <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                    <img className="img-fluid" src="/template/assets/img/statues-273745_960_720.jpg" alt="..."/>
+                                    <img className="img-fluid" src="/template/assets/img/tailleur-pierre.jpeg" alt="..."/>
                                 </a>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Tailleur de pierre</div>
-                                    <div className="portfolio-caption-subheading text-muted">Branding</div>
+                                    <div className="portfolio-caption-subheading text-muted">Sculpture</div>
                                 </div>
                             </div>
                         </div>
