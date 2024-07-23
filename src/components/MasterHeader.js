@@ -17,9 +17,8 @@ class Header extends Component {
                             </a>
                         </div>
                         <div className="masthead-heading text-uppercase">
-                            <a className="btn btn-xl btnDevisTel text-uppercase" href="#">
-                                <LocalPhoneIcon style={{marginRight: 20, marginBottom: 2}}/>06 78 27 11 88
-                            </a>
+                            <a className="btn btn-xl btnDevisTel text-uppercase" href="tel:+33678271188">
+                                <LocalPhoneIcon style={{marginRight: 20, marginBottom: 2}}/>06 78 27 11 88</a>
                         </div>
                     </div>
                 </div>
