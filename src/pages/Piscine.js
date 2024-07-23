@@ -39,7 +39,7 @@ class Piscine extends Component {
 
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid container-marges-images"/>
+                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid"/>
                     </div>
                 </div>
             </section>

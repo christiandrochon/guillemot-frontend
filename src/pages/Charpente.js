@@ -5,13 +5,12 @@ import {Typography} from "@mui/material";
 class Charpente extends Component {
     render() {
         return (
-            <section className="page-section bg-light" id="portfolio">
+            <section className="page-section bg-light">
                 <div className="container container-marges-texte">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
                         <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
 
-                        {/*Charpente et Couverture*/}
                         <Typography variant="h5" className="pb-5">L'entreprise est spécialisée dans les travaux de charpente et de couverture, offrant une large
                             gamme de services pour répondre à tous vos besoins en construction et rénovation.</Typography>
 
@@ -40,7 +39,7 @@ class Charpente extends Component {
                         <p>Traitement des toitures</p>
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid container-marges-images"/>
+                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid"/>
                     </div>
                 </div>
             </section>

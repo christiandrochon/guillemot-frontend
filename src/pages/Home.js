@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {IconButton, Link, List, ListItem, ListItemButton, ListItemText} from "@mui/material";
+import {IconButton, Link, List, ListItem, ListItemButton, ListItemText, Typography} from "@mui/material";
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 
 class Home extends Component {
@@ -19,12 +19,11 @@ class Home extends Component {
                             pierre sur mesure.</h3>
                         {/*<h3 className="section-subheading text-muted">Nous proposons une large gamme de services.</h3>*/}
 
-                        {/*<hr className="pb-5"/>*/}
+                        <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui perdure depuis cinq générations.
+                            <br/>
+                            Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la construction.</Typography>
 
-                        <p className="fs-4 pb-3">SARL GUILLEMOT Père et fils est une entreprise familiale qui perdure depuis cinq générations. <br/>
-                            Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la construction.</p>
-
-                        <h4>Spécialités de l'entreprise :</h4>
+                        <h4>Spécialités de l'entreprise</h4>
                         {/*<ul className="pb-4 list-group list-group-flush">*/}
                         {/*    <li className="fs-5 list-group-item bg-transparent">Travaux de maçonnerie</li>*/}
                         {/*    <li className="fs-5 list-group-item bg-transparent">Charpente et couverture</li>*/}
@@ -38,7 +37,7 @@ class Home extends Component {
                         {/*    <li className="fs-4">Construction de piscines enterrées</li>*/}
                         {/*    <li className="fs-4">Taille de pierre</li>*/}
                         {/*</ul>*/}
-                        <p className="pb-3">Travaux de maçonnerie <br/> Charpente et couverture <br/>Construction de piscines enterrées <br/>Taille de pierre
+                        <p className="pb-5">Travaux de maçonnerie <br/> Charpente et couverture <br/>Construction de piscines enterrées <br/>Taille de pierre
                         </p>
                         {/*<ul className=" pb-4">*/}
                         {/*    <li className="fs-5">Travaux de maçonnerie</li>*/}
@@ -48,18 +47,17 @@ class Home extends Component {
                         {/*</ul>*/}
 
                         <h4>Zone d'intervention :</h4>
-                        <p className="pb-3">L'entreprise intervient dans un rayon de <strong>50 kilomètres</strong> autour de Talais.</p>
+                        <p className="pb-5">L'entreprise intervient dans un rayon de <strong>50 kilomètres</strong> autour de Talais.</p>
 
-                        <h4>Prestations offertes :</h4>
-                        <p><strong>Neuf et rénovation</strong> - SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour les
+                        <h4>Prestations offertes</h4>
+                        <p className="pb-5"><strong>Neuf et rénovation : </strong> SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour les
                             projets neufs que pour la rénovation.
 
-                            <br/> <strong>Particuliers et entreprises</strong> - Nous travaillons avec les particuliers ainsi qu'avec les
+                            <br/> <strong>Particuliers et entreprises : </strong> Nous travaillons avec les particuliers ainsi qu'avec les
                             entreprises.
                             <br/>
-                            <strong>Conseils et devis</strong> - L'entreprise propose des conseils personnalisés, incluant des devis
-                            gratuits et des
-                            études de marché.
+                            <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
+                            gratuits et des études de marché.
                         </p>
                         {/*<ul className="listeSansPuces pb-4">*/}
                         {/*    <li className="fs-5"><strong>Neuf et rénovation</strong> : SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour les*/}
@@ -75,15 +73,16 @@ class Home extends Component {
                         {/*</ul>*/}
 
 
-                        <h4>Collaboration avec des artisans :</h4>
-                        <p className="pb-4">GUILLEMOT Père et fils travaille en lien avec un <strong>réseau d'artisans qualifiés</strong>. <br/>Cette collaboration
-                            permet d'organiser des réunions de chantier et de proposer rapidement des artisans pour les travaux qui ne relèvent pas de nos
+                        <h4>Collaboration avec un réseau d'artisans</h4>
+                        <p className="pb-5">GUILLEMOT Père et fils travaille en lien avec un <strong>réseau d'artisans qualifiés</strong>. <br/>Cette
+                            collaboration permet d'organiser des réunions de chantier et de proposer rapidement des artisans pour les travaux qui ne relèvent pas de nos
                             compétences.</p>
 
-                        <h4>Savoir-faire spécifique :</h4>
+                        <h4>Savoir-faire spécifique</h4>
                         <p>L'entreprise est particulièrement reconnue pour son savoir-faire dans le <strong>travail de la briquette sur les villas de type
                             soulacaise.</strong></p>
-                        <svg className="pt-5"><DashboardRoundedIcon/></svg>
+
+                        <svg className="my-5"><DashboardRoundedIcon/></svg>
                     </div>
 
                     <div className="row">

@@ -27,7 +27,7 @@ class Contact extends Component {
 
 
                         <svg className="my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/contact-us-banner.jpeg" alt="contact" className="img-fluid container-marges-images"/>
+                        <img src="/template/assets/img/contact-us-banner.jpeg" alt="contact" className="img-fluid"/>
                     </div>
                 </div>
             </section>
