@@ -39,7 +39,7 @@ function App() {
                     <div className="container">
                         <a className="navbar-brand" href="#page-top">
                             {/*<img src="/template/assets/img/png-clipart-logo-handicraft-graphics-artisan.png" alt="logo guillemot"/>*/}
-                            {/*<img src="/template/assets/img/navbar-logo.svg" alt="..."/>*/}
+                            <img src="/template/assets/img/navbar-logo.svg" alt="..."/>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

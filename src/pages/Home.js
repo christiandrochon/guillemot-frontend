@@ -12,45 +12,49 @@ class Home extends Component {
     render() {
         return (
             <section className="page-section bg-light">
-                <div className="container container-marges-texte">
+                <div className="container">
                     <div className="text-center pb-5">
                         <h2 className="section-heading text-uppercase">SARL GUILLEMOT Père et fils</h2>
                         <h3 className="section-subheading text-muted">Votre expert en construction et rénovation : maçonnerie, charpente, piscines et taille de
                             pierre sur mesure.</h3>
                         {/*<h3 className="section-subheading text-muted">Nous proposons une large gamme de services.</h3>*/}
 
-                        <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui perdure depuis cinq générations.
-                            <br/>
-                            Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la construction.</Typography>
+                        <div className="container-marges-texte">
+                            <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui perdure depuis cinq
+                                générations.
+                                <br/>
+                                Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la construction.</Typography>
 
-                        <h4>Spécialités de l'entreprise</h4>
-                        <p className="pb-5">Travaux de maçonnerie <br/> Charpente et couverture <br/>Construction de piscines enterrées <br/>Taille de pierre
-                        </p>
+                            <h4>Spécialités de l'entreprise</h4>
+                            <p className="pb-5">Travaux de maçonnerie <br/> Charpente et couverture <br/>Construction de piscines enterrées <br/>Taille de
+                                pierre
+                            </p>
 
 
-                        <h4>Zone d'intervention :</h4>
-                        <p className="pb-5">L'entreprise intervient dans un rayon de <strong>50 kilomètres</strong> autour de Talais.</p>
+                            <h4>Zone d'intervention</h4>
+                            <p className="pb-5">L'entreprise intervient dans un rayon de <strong>50 kilomètres</strong> autour de Talais.</p>
 
-                        <h4>Prestations offertes</h4>
-                        <p className="pb-5"><strong>Neuf et rénovation : </strong> SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour les
-                            projets neufs que pour la rénovation.
+                            <h4>Prestations offertes</h4>
+                            <p className="pb-5"><strong>Neuf et rénovation : </strong> SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour les
+                                projets neufs que pour la rénovation.
 
-                            <br/> <strong>Particuliers et entreprises : </strong> Nous travaillons avec les particuliers ainsi qu'avec les
-                            entreprises.
-                            <br/>
-                            <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
-                            gratuits et des études de marché.
-                        </p>
+                                <br/> <strong>Particuliers et entreprises : </strong> Nous travaillons avec les particuliers ainsi qu'avec les
+                                entreprises.
+                                <br/>
+                                <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
+                                gratuits et des études de marché.
+                            </p>
 
-                        <h4>Collaboration avec un réseau d'artisans</h4>
-                        <p className="pb-5">GUILLEMOT Père et fils travaille en lien avec un <strong>réseau d'artisans qualifiés</strong>. <br/>Cette
-                            collaboration permet d'organiser des réunions de chantier et de proposer rapidement des artisans pour les travaux qui ne relèvent pas de nos
-                            compétences.</p>
+                            <h4>Collaboration avec un réseau d'artisans</h4>
+                            <p className="pb-5">GUILLEMOT Père et fils travaille en lien avec un <strong>réseau d'artisans qualifiés</strong>. <br/>Cette
+                                collaboration permet d'organiser des réunions de chantier et de proposer rapidement des artisans pour les travaux qui ne
+                                relèvent pas de nos
+                                compétences.</p>
 
-                        <h4>Savoir-faire spécifique</h4>
-                        <p>L'entreprise est particulièrement reconnue pour son savoir-faire dans le <strong>travail de la briquette sur les villas de type
-                            soulacaise.</strong></p>
-
+                            <h4>Savoir-faire spécifique</h4>
+                            <p>L'entreprise est particulièrement reconnue pour son savoir-faire dans le <strong>travail de la briquette sur les villas de type
+                                soulacaise.</strong></p>
+                        </div>
                         <svg className="my-5"><DashboardRoundedIcon/></svg>
                     </div>
 
