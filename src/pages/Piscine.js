@@ -1,15 +1,26 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import {Typography} from "@mui/material";
+import HeaderContext from "./../components/HeaderContext";
 
 class Piscine extends Component {
+    static contextType = HeaderContext;
+
+    componentDidMount() {
+        const {updateHeaderDetails} = this.context;
+        updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure');
+    }
+
     render() {
+        const {titre, sousTitre} = this.context;
         return (
             <section className="page-section bg-light">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Piscine</h2>
-                        <h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>
+                        <div className="masthead-heading text-uppercase">{titre}</div>
+                        <div className="masthead-subheading">{sousTitre}</div>
+                        {/*<h2 className="section-heading text-uppercase">Piscine</h2>*/}
+                        {/*<h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>*/}
 
                         <div className="container-marges-texte">
                             <Typography variant="h5" className="pb-5">Transformez votre jardin en oasis de détente avec nos piscines sur mesure, conçues et

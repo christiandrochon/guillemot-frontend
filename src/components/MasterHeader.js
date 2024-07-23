@@ -1,18 +1,32 @@
 import React, {Component} from 'react';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import DescriptionIcon from '@mui/icons-material/Description';
+import HeaderContext from "./HeaderContext";
 
-class Header extends Component {
+class MasterHeader extends Component {
+
+    static contextType = HeaderContext;
+
     render() {
+        const { headerDetails } = this.context;
+        console.log(headerDetails);
+
+        // Ensure titre and sousTitre are strings before rendering
+        const titre = typeof headerDetails.titre === 'string' ? headerDetails.titre : '';
+        const sousTitre = typeof headerDetails.sousTitre === 'string' ? headerDetails.sousTitre : '';
+
         return (
             <header className="masthead">
                 <div className="container">
-                    {/*<div className="masthead-subheading">Maçonnerie, Charpente et couverture, Piscine, Tailleur de pierre</div>*/}
-                    <div className="masthead-subheading">Neuf et rénovation</div>
-                    <div className="masthead-heading text-uppercase">Guillemot et frères</div>
+
+                    <div className="masthead-subheading">{sousTitre}</div>
+                    <div className="masthead-heading text-uppercase">{titre}</div>
+                    {/*<div className="masthead-subheading">Neuf et rénovation</div>*/}
+                    {/*<div className="masthead-heading text-uppercase">Guillemot et frères</div>*/}
+
                     <div className="d-lg-inline-flex" style={{justifyContent: 'center', gap: '5em'}}>
                         <div className="masthead-heading text-uppercase">
-                            <a className="btn btn-xl btnDevisTel text-uppercase" href="#">
+                            <a className="btn btn-xl btnDevisTel text-uppercase" href="/">
                                 <DescriptionIcon style={{marginRight: 20, marginBottom: 2}}/>Devis gratuit
                             </a>
                         </div>
@@ -23,9 +37,8 @@ class Header extends Component {
                     </div>
                 </div>
             </header>
-        )
-            ;
+        );
     }
 }
 
-export default Header;
+export default MasterHeader;

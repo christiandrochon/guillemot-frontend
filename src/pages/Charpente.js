@@ -1,16 +1,27 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import {Typography} from "@mui/material";
+import HeaderContext from "./../components/HeaderContext";
 
 class Charpente extends Component {
+    static contextType = HeaderContext;
+
+    componentDidMount() {
+        const {updateHeaderDetails} = this.context;
+        updateHeaderDetails('Charpente, couverture', 'Solutions complètes pour vos projets de toiture et d\'aménagement extérieur');
+    }
+
     render() {
+        const {titre, sousTitre} = this.context;
         return (
             <section className="page-section bg-light">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
-                        <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement
-                            extérieur.</h3>
+                        <div className="masthead-heading text-uppercase">{titre}</div>
+                        <div className="masthead-subheading">{sousTitre}</div>
+                        {/*<h2 className="section-heading text-uppercase">Charpente, couverture</h2>*/}
+                        {/*<h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement*/}
+                        {/*    extérieur.</h3>*/}
 
                         <div className="container-marges-texte">
                             <Typography variant="h5" className="pb-5">L'entreprise est spécialisée dans les travaux de charpente et de couverture, offrant une
