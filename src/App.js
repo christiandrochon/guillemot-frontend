@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 // import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Link, NavLink, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import MasterHeader from "./components/MasterHeader";
 import Footer from "./components/Footer";
@@ -15,6 +15,16 @@ import TaillePierre from "./pages/TaillePierre";
 import Contact from "./pages/Contact";
 
 function App() {
+
+    // État pour suivre l'onglet actif
+    const [activeTab, setActiveTab] = useState('home');
+
+    // Fonction pour changer l'onglet actif
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+    };
+
+
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
         {path: '/', element: <Home/>},
@@ -47,43 +57,56 @@ function App() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/">Accueil</Link></li>
-                                {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>*/}
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/maconnerie">Maconnerie</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/charpente">Charpente, couverture</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/piscine">Piscine</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/taillepierre">Taille de pierre</Link></li>
+                                <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                                 to="/">Accueil</NavLink>
+                            </li>
+                            {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>*/}
+                            <li key={routs.id}
+                                className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                              to="/maconnerie">Maconnerie</NavLink></li>
+                            <li key={routs.id}
+                                className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to="/charpente">Charpente,
+                                couverture</NavLink></li>
+                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                             to="/piscine">Piscine</NavLink></li>
+                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                             to="/taillepierre">Taille de pierre</NavLink></li>
 
-                                {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/galerie">Galerie</Link></li>*/}
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/apropos">A propos</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
-                                <li key={routs.id} className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-                            </ul>
-                        </div>
+                            {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/galerie">Galerie</Link></li>*/}
+                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                             to="/apropos">A propos</NavLink></li>
+                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                             to="/team">Team</NavLink></li>
+                            <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
+                                                                             to="/contact">Contact</NavLink></li>
+                        </ul>
                     </div>
-                </nav>
-                {/*SWITCH fournit la route du composant*/}
-                <div className="container">
-                    <Routes>
-                        <Route exact path="/" element={<Home/>}/>
-                        <Route path="/maconnerie" element={<Maconnerie/>}/>
-                        <Route path="/charpente" element={<Charpente/>}/>
-                        <Route path="/piscine" element={<Piscine/>}/>
-                        <Route path="/taillepierre" element={<TaillePierre/>}/>
-                        <Route path="/apropos" element={<About/>}/>
-                        <Route path="/team" element={<Team/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
-
-                        {/*<Route path="/services" element={<Services/>}/>*/}
-                        {/*<Route path="/galerie" element={<Gallery/>}/>*/}
-
-                    </Routes>
-                </div>
             </div>
-            <Clients/>
-            <Footer/>
-        </BrowserRouter>
-    );
+        </nav>
+{/*SWITCH fournit la route du composant*/
+}
+    <div className="container">
+        <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/maconnerie" element={<Maconnerie/>}/>
+            <Route path="/charpente" element={<Charpente/>}/>
+            <Route path="/piscine" element={<Piscine/>}/>
+            <Route path="/taillepierre" element={<TaillePierre/>}/>
+            <Route path="/apropos" element={<About/>}/>
+            <Route path="/team" element={<Team/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+
+            {/*<Route path="/services" element={<Services/>}/>*/}
+            {/*<Route path="/galerie" element={<Gallery/>}/>*/}
+
+        </Routes>
+    </div>
+</div>
+    <Clients/>
+    <Footer/>
+</BrowserRouter>
+)
+    ;
 }
 
 export default App;
