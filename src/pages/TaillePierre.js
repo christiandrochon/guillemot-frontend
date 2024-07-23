@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
-import {Link} from "@mui/material";
+import {Link, Typography} from "@mui/material";
 
 class TaillePierre extends Component {
     render() {
@@ -11,10 +11,25 @@ class TaillePierre extends Component {
                         <h2 className="section-heading text-uppercase">Tailleur de pierre</h2>
                         <h3 className="section-subheading text-muted">Travail sur pierres et briquettes soulacaises.</h3>
 
-                        <p>L'entrerpise effectue le placage de murs en pierre et la taille de briquettes de style soulacais.</p>
-                        <p>Elle saura faire de la restauration de murs en pierre, le ravalement, le traitement des murs , le jointage.</p>
-                        <p>Elle effectue la taille de pierre pour les encadrements de portes et de fenêtres, les linteaux, les appuis de fenêtres, les </p>
-                            <svg><DashboardRoundedIcon/></svg>
+                        <Typography variant="h5" className="pb-5">Artisanat et expertise pour des réalisations sur mesure et de haute qualité.</Typography>
+
+                        <h4>Placage de Murs et Taille de Pierre</h4>
+                        <p>L'entreprise est spécialisée dans le placage de murs en pierre et la taille de briquettes de style soulacais, offrant des solutions
+                            esthétiques et durables pour vos projets de construction et de rénovation.</p>
+
+                        <h4>Restauration et Entretien :</h4>
+                        <p>Nous réalisons la restauration de murs en pierre, incluant le ravalement, le traitement des murs et le jointage, afin de préserver et
+                            valoriser votre patrimoine bâti.</p>
+
+                        <h4>Taille de Pierre :</h4>
+                        <p>Notre expertise en taille de pierre nous permet de créer des encadrements de portes et de fenêtres, des linteaux, ainsi que des
+                            appuis de fenêtres sur mesure, alliant tradition et savoir-faire artisanal.</p>
+
+                        {/*<p>L'entrerpise effectue le placage de murs en pierre et la taille de briquettes de style soulacais.</p>*/}
+                        {/*<p>Elle saura faire de la restauration de murs en pierre, le ravalement, le traitement des murs , le jointage.</p>*/}
+                        {/*<p>Elle effectue la taille de pierre pour les encadrements de portes et de fenêtres, les linteaux, les appuis de fenêtres, les </p>*/}
+                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
+                        <img src="/template/assets/img/statues-273745_960_720.jpg" alt="statues" className="img-fluid"/>
                     </div>
                 </div>
             </section>

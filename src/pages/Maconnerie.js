@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
+import {Typography} from "@mui/material";
 
 class Maconnerie extends Component {
     render() {
@@ -7,29 +8,23 @@ class Maconnerie extends Component {
             <section className="page-section bg-light" id="portfolio">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Maconnerie</h2>
-                        <h3 className="section-subheading text-muted">todo.</h3>
+                        <h2 className="section-heading text-uppercase">Maçonnerie</h2>
+                        <h3 className="section-subheading text-muted">Travaux de construction et de démolition.</h3>
 
-                        <p className="fs-5">L'entreprise évolue dans la construction et la démolition. La construction concerne l'agrandissemnt et l'extension des habitations et
-                            des batiments.
-                            tandis que la démolition consiste dans le dallage, les fondations et l'élévation des murs.</p>
-                        {/*<p>L'entreprise ne fait pas de terrassement ni d'assainissement.</p>*/}
-                        <p className="fs-5">Les travaux de maçonnerie sont réalisés par des maçons professionnels qui ont une connaissance approfondie des matériaux de
-                            construction et des techniques de construction.</p>
+                        {/*<hr className="pb-5"/>*/}
+                        <Typography variant="h5" className="pb-5">L'entreprise effectue des travaux de maçonnerie générale, de gros œuvre et de second œuvre.
+                        </Typography>
+                        <p className="fs-5">L'entreprise intervient dans les domaines de la construction et de la démolition. Concernant la
+                            construction, elle se spécialise dans l'agrandissement et l'extension des habitations et des bâtiments. Les travaux de démolition
+                            incluent le dallage, les fondations et l'élévation des murs.</p>
+                        <p className="fs-5">Elle intervient dans la construction de maisons individuelles, de bâtiments industriels, de bâtiments
+                            commerciaux, de bâtiments publics, de bâtiments agricoles.</p>
+                        <p className="fs-5">Les travaux de maçonnerie sont réalisés par des maçons professionnels possédant une connaissance approfondie des
+                            matériaux et des techniques de construction.</p>
 
-                        {/*<svg><DashboardRoundedIcon/></svg>*/}
+                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
                         <img src="/template/assets/img/istockphoto-886676118-2048x2048.webp" alt="Description de l'image" className="img-fluid"/>
                     </div>
-
-                    {/*<div className="portfolio-item">*/}
-                    {/*    <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">*/}
-                    {/*        <img className="img-fluid" src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="..."/>*/}
-                    {/*    </a>*/}
-                    {/*    <div className="portfolio-caption">*/}
-                    {/*        <div className="portfolio-caption-heading">Window</div>*/}
-                    {/*        <div className="portfolio-caption-subheading text-muted">Photography</div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                 </div>
             </section>
         );

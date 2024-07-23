@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
+import {Typography} from "@mui/material";
 
 class Charpente extends Component {
     render() {
@@ -8,25 +9,38 @@ class Charpente extends Component {
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
-                        <h3 className="section-subheading text-muted">todo.</h3>
+                        <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
 
-                        <p>L'entreprise pose les fermettes américaines et traditionnelles</p>
-                        <p>Elle effectue la couverture en tuiles, pose les bandeaux en lambris ou PVC</p>
-                        <p>Elle pose les gouttières en zinc ou PVC, les fenêtres de toit, les velux, les volets roulants et battants.</p>
-                        <p>Elle effectue l'isolation des combles et des rampants</p>
-                        <p>Elle pose les bardages en bois, PVC, zinc, ardoises, tuiles, etc.</p>
-                        <p>Elle pose les terrasses en bois, les pergolas, les abris de jardin, les carports, les garages, les appentis, les auvents, les préaux, les vérandas, les abris de piscine, etc.</p>
-                        <p>Elle effectue le traitement des toitures.</p>
+                        {/*Charpente et Couverture*/}
+                        <Typography variant="h5" className="pb-5">L'entreprise est spécialisée dans les travaux de charpente et de couverture, offrant une large
+                            gamme de services pour répondre à tous vos besoins en construction et rénovation.</Typography>
 
-                        <p>Elle pose les portes de garage</p>
-                        <p>Elle pose les portails</p>
-                        <p>Elle pose les clôtures</p>
-                        <p>Elle pose les portes d'entrée</p>
-                        <p>Elle pose les portes de service</p>
-                        <p>Elle pose les portes de garage</p>
+                        <h4>Charpente :</h4>
+                        <p>Pose de fermettes américaines et traditionnelles</p>
 
+                        <h4>Couverture :</h4>
+                        <p>Couverture en tuiles <br/>
+                            Pose de bandeaux en lambris ou PVC</p>
 
-                        <svg><DashboardRoundedIcon/></svg>
+                        <h4>Éléments de toiture :</h4>
+                        <p>Pose de gouttières en zinc ou PVC <br/>
+                            Installation de fenêtres de toit, Velux, volets roulants et battants</p>
+
+                        <h4>Isolation :</h4>
+                        <p>Isolation des combles et des rampants</p>
+
+                        <h4>Bardage :</h4>
+                        <p>Pose de bardages en bois, PVC, zinc, ardoises, tuiles, etc.</p>
+
+                        <h4>Aménagement extérieur :</h4>
+                        <p>Pose de terrasses en bois<br/>
+                            Installation de pergolas, abris de jardin, carports, garages, appentis, auvents, préaux, vérandas, abris de piscine, etc.</p>
+
+                        <h4>Entretien et traitement :</h4>
+                        <p>Traitement des toitures</p>
+
+                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
+                        <img src="/template/assets/img/istockphoto-1566979286-1024x1024.jpg" alt="Description de l'image" className="img-fluid"/>
                     </div>
                 </div>
             </section>
