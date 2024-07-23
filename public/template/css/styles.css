@@ -10946,14 +10946,16 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
+  color: #f0f0f0;
   /*background-image: url("../assets/img/header-bg.jpg");*/
-  background-image: url("../assets/img/istockphoto-886676118-2048x2048.webp");
+  /*background-image: url("../assets/img/istockphoto-886676118-2048x2048.webp");*/
+  background-image: url("../assets/img/mirror-construction-trowel-masonry-66761.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -10971,14 +10973,14 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
@@ -10987,6 +10989,7 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
