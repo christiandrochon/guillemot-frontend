@@ -29,3 +29,23 @@ li.active {
     border-radius: 5px;
     padding: 5px 10px;
 }
+.btnDevisTel{
+    --bs-btn-color: orange;
+    --bs-btn-bg: orange;
+    --bs-btn-border-color: #6c757d;
+    /*--bs-btn-border-color: orange;*/
+    /*--bs-btn-hover-color: blue;*/
+    /*--bs-btn-hover-bg:blue;*/
+    /*--bs-btn-hover-border-color: blue;*/
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    color: blue !important; /* Texte bleu */
+    border-radius: 5px; /* Coins arrondis */
+}
+.btnDevisTel:hover {
+    --bs-btn-border-color: blue;
+    --bs-btn-hover-color: blue;
+    --bs-btn-hover-bg: blue;
+    --bs-btn-hover-border-color: orange;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    color: orange !important;
+}

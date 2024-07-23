@@ -47,7 +47,7 @@ function App() {
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                     <div className="container">
                         <a className="navbar-brand" href="#page-top">
-                            <img src="/template/assets/img/png-clipart-logo-handicraft-graphics-artisan.png" alt="logo guillemot"/>
+                            {/*<img src="/template/assets/img/png-clipart-logo-handicraft-graphics-artisan.png" alt="logo guillemot"/>*/}
                             {/*<img src="/template/assets/img/navbar-logo.svg" alt="..."/>*/}
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -58,9 +58,7 @@ function App() {
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                                 <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
-                                                                                 to="/">Accueil</NavLink>
-                            </li>
-                            {/*<li key={routs.id} className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>*/}
+                                                                                 to="/">Accueil</NavLink></li>
                             <li key={routs.id}
                                 className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                                                               to="/maconnerie">Maconnerie</NavLink></li>
@@ -95,10 +93,6 @@ function App() {
             <Route path="/apropos" element={<About/>}/>
             <Route path="/team" element={<Team/>}/>
             <Route path="/contact" element={<Contact/>}/>
-
-            {/*<Route path="/services" element={<Services/>}/>*/}
-            {/*<Route path="/galerie" element={<Gallery/>}/>*/}
-
         </Routes>
     </div>
 </div>

@@ -12,12 +12,12 @@ class Header extends Component {
                     <div className="masthead-heading text-uppercase">Guillemot et frères</div>
                     <div className="d-lg-inline-flex" style={{justifyContent: 'center', gap: '5em'}}>
                         <div className="masthead-heading text-uppercase">
-                            <a className="btn btn-secondary btn-xl text-uppercase" href="#">
+                            <a className="btn btn-xl btnDevisTel text-uppercase" href="#">
                                 <DescriptionIcon style={{marginRight: 20, marginBottom: 2}}/>Devis gratuit
                             </a>
                         </div>
                         <div className="masthead-heading text-uppercase">
-                            <a className="btn btn-secondary btn-xl text-uppercase" href="#">
+                            <a className="btn btn-xl btnDevisTel text-uppercase" href="#">
                                 <LocalPhoneIcon style={{marginRight: 20, marginBottom: 2}}/>06 78 27 11 88
                             </a>
                         </div>
