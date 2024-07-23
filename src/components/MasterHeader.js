@@ -5,6 +5,7 @@ import HeaderContext from "./HeaderContext";
 
 class MasterHeader extends Component {
 
+    // Contexte pour passer les var titre et sousTitre du bandeau
     static contextType = HeaderContext;
 
     render() {
@@ -19,10 +20,8 @@ class MasterHeader extends Component {
             <header className="masthead">
                 <div className="container">
 
-                    <div className="masthead-subheading">{sousTitre}</div>
                     <div className="masthead-heading text-uppercase">{titre}</div>
-                    {/*<div className="masthead-subheading">Neuf et rénovation</div>*/}
-                    {/*<div className="masthead-heading text-uppercase">Guillemot et frères</div>*/}
+                    <div className="masthead-subheading">{sousTitre}</div>
 
                     <div className="d-lg-inline-flex" style={{justifyContent: 'center', gap: '5em'}}>
                         <div className="masthead-heading text-uppercase">
