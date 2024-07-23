@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
+import {Typography} from "@mui/material";
 
 class Piscine extends Component {
     render() {
@@ -9,6 +10,8 @@ class Piscine extends Component {
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Piscine</h2>
                         <h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>
+                        <Typography variant="h5" className="pb-5">Transformez votre jardin en oasis de détente avec nos piscines sur mesure, conçues et
+                            construites avec l'expertise de notre entreprise de maçonnerie.</Typography>
 
                         <h4>Piscines Enterrées</h4>
                         <p>L'entreprise se spécialise dans la construction de piscines neuves en maçonnerie, offrant des piscines enterrées et en dur, adaptées
@@ -29,14 +32,6 @@ class Piscine extends Component {
                         <h4>Dimensions :</h4>
                         <p>Nos piscines peuvent être de tailles standards ou sur mesure, avec des profondeurs variables, pour répondre à vos exigences
                             spécifiques.</p>
-
-                        {/*<p>L'entreprise construit des piscines neuves en maconnerie, c'est à dire des piscines enterrées et en dur.</p>*/}
-                        {/*<p>Le travail se fait en lien avec un pisciniste qui sera en mesure de compléter l'offre des travaux de maconnerie.</p>*/}
-                        {/*<p>Les piscines sont construites en béton armé, en parpaings, en briques, en pierres, en bois, en coques polyester, etc.</p>*/}
-                        {/*<p>Les piscines peuvent être de formes rectangulaires, rondes, ovales, en haricot, etc.</p>*/}
-                        {/*<p>Les piscines peuvent être de tailles standards ou sur mesure.</p>*/}
-                        {/*<p>Les piscines peuvent être de profondeurs variables.</p>*/}
-
 
                         <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
                         <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid"/>

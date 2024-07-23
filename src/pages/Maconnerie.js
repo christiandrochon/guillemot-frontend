@@ -8,8 +8,8 @@ class Maconnerie extends Component {
             <section className="page-section bg-light">
                 <div className="container container-marges-texte">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Maçonnerie</h2>
-                        <h3 className="section-subheading text-muted">Travaux de construction et de démolition.</h3>
+                        <h2 className="section-heading text-uppercase centered-title">Maçonnerie</h2>
+                        <h3 className="section-subheading text-muted centered-title">Travaux de construction et de démolition.</h3>
 
                         <Typography variant="h5" className="pb-5">L'entreprise effectue des travaux de maçonnerie générale, de gros œuvre et de second œuvre.
                         </Typography>

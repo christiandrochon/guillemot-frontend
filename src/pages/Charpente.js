@@ -8,8 +8,8 @@ class Charpente extends Component {
             <section className="page-section bg-light">
                 <div className="container container-marges-texte">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase">Charpente, couverture</h2>
-                        <h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
+                        <h2 className="section-heading text-uppercase centered-title">Charpente, couverture</h2>
+                        <h3 className="section-subheading text-muted centered-title">Solutions complètes pour vos projets de toiture et d'aménagement extérieur.</h3>
 
                         <Typography variant="h5" className="pb-5">L'entreprise est spécialisée dans les travaux de charpente et de couverture, offrant une large
                             gamme de services pour répondre à tous vos besoins en construction et rénovation.</Typography>
