@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '14'
 
       - name: Install dependencies
         run: npm install
@@ -24,11 +24,19 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Debug information
+        run: |
+          echo "Checking directory structure"
+          ls -la
+          echo "Checking branch"
+          git branch
+          echo "Checking git status"
+          git status
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: build
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-
+          # Ensure to remove the git history in the build directory
+          keep_history: false
