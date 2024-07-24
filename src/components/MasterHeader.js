@@ -21,7 +21,7 @@ class MasterHeader extends Component {
                 <div className="container">
 
                     <div className="masthead-heading text-uppercase">{titre}</div>
-                    <div className="masthead-subheading">{sousTitre}</div>
+                    <div className="masthead-subheading mb-5">{sousTitre}</div>
 
                     <div className="d-lg-inline-flex" style={{justifyContent: 'center', gap: '5em'}}>
                         <div className="masthead-heading text-uppercase">
