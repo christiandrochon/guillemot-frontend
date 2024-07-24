@@ -6,6 +6,8 @@ class Contact extends Component {
     static contextType = HeaderContext;
 
     componentDidMount() {
+        window.scrollTo(0, 0);
+        //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         updateHeaderDetails('Contact', 'Nous sommes là pour vous aider');
     }

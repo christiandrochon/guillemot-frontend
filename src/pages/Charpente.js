@@ -7,6 +7,8 @@ class Charpente extends Component {
     static contextType = HeaderContext;
 
     componentDidMount() {
+        window.scrollTo(0, 0);
+        //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         updateHeaderDetails('Charpente, couverture', 'Solutions complètes pour vos projets de toiture et d\'aménagement extérieur');
     }

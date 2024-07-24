@@ -8,6 +8,8 @@ class Maconnerie extends Component {
     static contextType = HeaderContext;
 
     componentDidMount() {
+        window.scrollTo(0, 0);
+        //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         updateHeaderDetails('Maçonnerie', 'Travaux de construction et de démolition');
     }

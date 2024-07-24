@@ -9,6 +9,8 @@ class Home extends Component {
 
     // Donner les valeurs attendues dans le bandeau
     componentDidMount() {
+        window.scrollTo(0, 0);
+        //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         updateHeaderDetails('SARL GUILLEMOT Père et fils', 'Votre expert en construction et rénovation');
     }
@@ -45,10 +47,9 @@ class Home extends Component {
 
                             <h4>Prestations offertes</h4>
                             <p className="pb-5"><strong>Neuf et rénovation : </strong> SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour
-                                les
-                                projets neufs que pour la rénovation.
+                                les projets neufs que pour la rénovation.
 
-                                <br/> <strong>Particuliers et entreprises : </strong> L'équipe travaille aussi bien pour le compte des particuliers que pour celui des
+                                <br/> <strong>Particuliers et entreprises : </strong> Elle travaille aussi bien pour le compte des particuliers que pour celui des
                                 entreprises.
                                 <br/>
                                 <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
@@ -58,8 +59,7 @@ class Home extends Component {
                             <h4>Collaboration avec un réseau d'artisans</h4>
                             <p className="pb-5">GUILLEMOT Père et fils travaille en lien avec un <strong>réseau d'artisans qualifiés</strong>. <br/>Cette
                                 collaboration permet d'organiser des réunions de chantier et de proposer rapidement des artisans pour les travaux qui ne
-                                relèvent pas de nos
-                                compétences.</p>
+                                relèvent pas de nos compétences.</p>
 
                             <h4>Savoir-faire spécifique</h4>
                             <p>L'entreprise est particulièrement reconnue pour son savoir-faire dans le <strong>travail de la briquette sur les villas de

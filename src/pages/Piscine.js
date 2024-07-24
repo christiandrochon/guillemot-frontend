@@ -7,6 +7,8 @@ class Piscine extends Component {
     static contextType = HeaderContext;
 
     componentDidMount() {
+        window.scrollTo(0, 0);
+        //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure');
     }
