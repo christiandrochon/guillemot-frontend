@@ -10,6 +10,8 @@ import Piscine from "./pages/Piscine";
 import TaillePierre from "./pages/TaillePierre";
 import Contact from "./pages/Contact";
 import HeaderContext from "./components/HeaderContext";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
     /*Declaration d'une constante pour les details du header*/
@@ -18,6 +20,7 @@ function App() {
     const updateHeaderDetails = (titre, sousTitre) => {
         setHeaderDetails({titre, sousTitre});
     };
+
 
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
@@ -36,6 +39,7 @@ function App() {
         <HeaderContext.Provider value={{headerDetails, updateHeaderDetails}}>
             <BrowserRouter>
                 <MasterHeader/>
+                <ScrollToTop/>
                 <div id="page-top">
                     {/*LINK fournit le lien vers le composant*/}
                     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
