@@ -48,7 +48,7 @@ class Home extends Component {
                                 les
                                 projets neufs que pour la rénovation.
 
-                                <br/> <strong>Particuliers et entreprises : </strong> Nous travaillons avec les particuliers ainsi qu'avec les
+                                <br/> <strong>Particuliers et entreprises : </strong> L'équipe travaille aussi bien pour le compte des particuliers que pour celui des
                                 entreprises.
                                 <br/>
                                 <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
