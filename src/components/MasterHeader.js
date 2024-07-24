@@ -23,9 +23,9 @@ class MasterHeader extends Component {
                     <div className="masthead-heading text-uppercase">{titre}</div>
                     <div className="masthead-subheading mb-5">{sousTitre}</div>
 
-                    <div className="d-lg-inline-flex" style={{justifyContent: 'center', gap: '5em'}}>
+                    <div className="d-lg-inline-flex " style={{justifyContent: 'center', gap: '5em'}}>
                         <div className="masthead-heading text-uppercase">
-                            <a className="btn btn-xl btnDevisTel text-uppercase" href="mailto:guillemot.freres@live.fr">
+                            <a className="btn btn-xl btnDevisTel text-uppercase" href="mailto:guillemot.freres@live.fr" >
                                 <DescriptionIcon style={{marginRight: 20, marginBottom: 2}}/>Devis gratuit
                             </a>
                         </div>

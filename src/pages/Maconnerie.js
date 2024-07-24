@@ -33,9 +33,7 @@ class Maconnerie extends Component {
                             <p className="fs-5">L'entreprise intervient dans les domaines de la <strong>construction</strong> et de
                                 la <strong>démolition</strong>.<br/> Concernant la
                                 construction, elle se spécialise dans <strong>l'agrandissement</strong> et <strong>l'extension</strong> des
-                                habitations et des
-                                bâtiments. Les travaux de démolition
-                                incluent le <strong>dallage</strong>, les <strong>fondations</strong> et <strong>l'élévation des murs</strong>.</p>
+                                habitations et des  bâtiments. Les travaux de démolition incluent le <strong>dallage</strong>, les <strong>fondations</strong> et <strong>l'élévation des murs</strong>.</p>
                             <p className="fs-5">Elle intervient dans la construction de maisons individuelles, de bâtiments industriels, de
                                 bâtiments
                                 commerciaux, de bâtiments publics, de bâtiments agricoles et autres.</p>
