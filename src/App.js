@@ -79,7 +79,7 @@ function App() {
 
                     {/*SWITCH fournit la route du composant*/
                     }
-                    <div className="container">
+                    <div className="">
                         <Routes>
                             <Route exact path="/" element={<Home/>}/>
                             <Route path="/maconnerie" element={<Maconnerie/>}/>

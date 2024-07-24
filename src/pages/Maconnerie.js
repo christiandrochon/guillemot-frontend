@@ -18,14 +18,14 @@ class Maconnerie extends Component {
         const {titre, sousTitre} = this.context;
         return (
             <section className="page-section bg-light">
-                <div className="container ">
+                <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
                         {/*<h2 className="section-heading text-uppercase ">Maçonnerie</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Travaux de construction et de démolition.</h3>*/}
 
-                        <div className="container-marges-texte">
+                        <div className="">
                             <Typography variant="h5" className="pb-5">L'entreprise effectue des travaux de maçonnerie générale, de gros œuvre et de
                                 second
                                 œuvre.
@@ -43,8 +43,8 @@ class Maconnerie extends Component {
                                 approfondie des
                                 matériaux et des techniques de construction.</p>
                         </div>
-                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/60728329_l.jpg" alt="chantier" className="img-fluid logo-img-fluid"/>
+                        <svg><DashboardRoundedIcon/></svg>
+                        <img src="/template/assets/img/60728329_l.jpg" alt="chantier" className="img-fluid logo-img-fluid px-5"/>
                     </div>
                 </div>
             </section>

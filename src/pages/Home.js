@@ -20,7 +20,7 @@ class Home extends Component {
         return (
 
             <section className="page-section bg-light">
-                <div className="container">
+                <div className="px-5">
                     <div className="text-center pb-5">
                         <div className="masthead-heading">{titre}</div>
                         <div className="masthead-subheading text-uppercase">{sousTitre}</div>
@@ -29,7 +29,7 @@ class Home extends Component {
                         {/*    pierre sur mesure.</h3>*/}
 
 
-                        <div className="container-marges-texte">
+                        <div className="">
                             <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale de maçonnerie qui oeuvre dans la
                                 construction et la rénovation depuis cinq générations.
                                 <br/>
@@ -73,7 +73,7 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITME 1*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <a className="portfolio-link" data-bs-toggle="" href="/maconnerie">
                                     <img className="img-fluid" src="/template/assets/img/0506aff5-461d-4dd7-a091-2c0b3340f32b-1600-1920w.webp" alt="img 1"/>
                                 </a>
                                 <div className="portfolio-caption">
@@ -85,7 +85,7 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITEM 2*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <a className="portfolio-link" data-bs-toggle="" href="/charpente">
                                     <img className="img-fluid" src="/template/assets/img/1632832547-charpente-bois-min.avif" alt="img 2"/>
                                 </a>
                                 <div className="portfolio-caption">
@@ -97,7 +97,7 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITEM 3*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <a className="portfolio-link" data-bs-toggle="" href="/piscine">
                                     <img className="img-fluid" src="/template/assets/img/infinity-pool-2396808_960_720.jpg" alt="img 3"/>
                                 </a>
                                 <div className="portfolio-caption">
@@ -109,7 +109,7 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4 mb-lg-0">
                             {/*PORTFOLIO ITEM 4*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <a className="portfolio-link" data-bs-toggle="" href="/taillepierre">
                                     <img className="img-fluid" src="/template/assets/img/tailleur-pierre.jpeg" alt="..."/>
                                 </a>
                                 <div className="portfolio-caption">
