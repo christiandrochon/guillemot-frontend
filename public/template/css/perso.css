@@ -75,3 +75,29 @@ li.active {
     --bs-btn-focus-shadow-rgb: 130, 138, 145;
     color: orange !important;
 }
+/*TITRE RESPONSIVE*/
+/* Taille de base pour les écrans larges */
+header.masthead .masthead-heading {
+  font-size: 4.5rem; /* Taille de base */
+}
+
+/* Pour les écrans de tablettes */
+@media (max-width: 992px) {
+  header.masthead .masthead-heading {
+    font-size: 4rem; /* Réduire la taille de la police */
+  }
+}
+
+/* Pour les écrans de téléphones */
+@media (max-width: 768px) {
+  header.masthead .masthead-heading {
+    font-size: 3.5rem; /* Réduire davantage la taille de la police */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 576px) {
+  header.masthead .masthead-heading {
+    font-size: 2rem; /* Taille minimale de la police */
+  }
+}
