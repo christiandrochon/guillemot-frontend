@@ -50,8 +50,8 @@ function App() {
                                 Menu
                                 <i className="fas fa-bars ms-1"></i>
                             </button>
-                            <div className="collapse navbar-collapse" id="navbarResponsive">
-                                <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <div className="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+                                <ul className="navbar-nav text-uppercase py-4 py-lg-1">
                                     <li key={routs.id} className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"}
                                                                                      to="/">Accueil</NavLink></li>
                                     <li key={routs.id}
