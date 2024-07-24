@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Typography} from "@mui/material";
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import HeaderContext from "./../components/HeaderContext";
+import {Link} from "react-router-dom";
 
 class Home extends Component {
 
@@ -49,7 +50,8 @@ class Home extends Component {
                             <p className="pb-5"><strong>Neuf et rénovation : </strong> SARL GUILLEMOT Père et fils fournit des prestations aussi bien pour
                                 les projets neufs que pour la rénovation.
 
-                                <br/> <strong>Particuliers et entreprises : </strong> Elle travaille aussi bien pour le compte des particuliers que pour celui des
+                                <br/> <strong>Particuliers et entreprises : </strong> Elle travaille aussi bien pour le compte des particuliers que pour celui
+                                des
                                 entreprises.
                                 <br/>
                                 <strong>Conseils et devis : </strong> L'entreprise propose des conseils personnalisés, incluant des devis
@@ -73,9 +75,9 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITME 1*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="" href="/maconnerie">
+                                <Link to="/maconnerie" className="portfolio-link">
                                     <img className="img-fluid" src="/template/assets/img/0506aff5-461d-4dd7-a091-2c0b3340f32b-1600-1920w.webp" alt="img 1"/>
-                                </a>
+                                </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Maçonnerie</div>
                                     <div className="portfolio-caption-subheading text-muted">Chantier</div>
@@ -85,9 +87,9 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITEM 2*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="" href="/charpente">
+                                <Link to="/charpente" className="portfolio-link">
                                     <img className="img-fluid" src="/template/assets/img/1632832547-charpente-bois-min.avif" alt="img 2"/>
-                                </a>
+                                </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Charpente, couverture</div>
                                     <div className="portfolio-caption-subheading text-muted">Armature</div>
@@ -97,9 +99,9 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4">
                             {/*PORTFOLIO ITEM 3*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="" href="/piscine">
+                                <Link to="/piscine" className="portfolio-link">
                                     <img className="img-fluid" src="/template/assets/img/infinity-pool-2396808_960_720.jpg" alt="img 3"/>
-                                </a>
+                                </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Piscine</div>
                                     <div className="portfolio-caption-subheading text-muted">Détente</div>
@@ -109,9 +111,9 @@ class Home extends Component {
                         <div className="col-lg-6 col-sm-6 mb-4 mb-lg-0">
                             {/*PORTFOLIO ITEM 4*/}
                             <div className="portfolio-item">
-                                <a className="portfolio-link" data-bs-toggle="" href="/taillepierre">
+                                <Link to="/taillepierre" className="portfolio-link">
                                     <img className="img-fluid" src="/template/assets/img/tailleur-pierre.jpeg" alt="..."/>
-                                </a>
+                                </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Tailleur de pierre</div>
                                     <div className="portfolio-caption-subheading text-muted">Sculpture</div>
