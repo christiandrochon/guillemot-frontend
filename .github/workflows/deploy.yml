@@ -19,10 +19,14 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          echo "Dependencies installed successfully."
 
       - name: Build the project
-        run: npm run build
+        run: |
+          npm run build
+          echo "Project built successfully."
 
       - name: Debug information
         run: |
@@ -38,14 +42,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          # Ensure to remove the git history in the build directory
           keep_history: false
-
-      - name: Debug information
-        run: |
-          echo "Checking directory structure"
-          ls -la
-          echo "Checking branch"
-          git branch
-          echo "Checking git status"
-          git status
