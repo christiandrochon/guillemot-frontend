@@ -41,11 +41,3 @@ jobs:
           # Ensure to remove the git history in the build directory
           keep_history: false
 
-      - name: Debug information
-        run: |
-          echo "Checking directory structure"
-          ls -la
-          echo "Checking branch"
-          git branch
-          echo "Checking git status"
-          git status
