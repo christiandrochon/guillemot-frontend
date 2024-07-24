@@ -19,23 +19,13 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: |
-          npm install
-          echo "Dependencies installed successfully."
+        run: npm install
 
       - name: Build the project
-        run: |
-          npm run build
-          echo "Project built successfully."
+        run: npm run build
 
-      - name: Debug information
-        run: |
-          echo "Checking directory structure"
-          ls -la
-          echo "Checking branch"
-          git branch
-          echo "Checking git status"
-          git status
+      - name: Create .nojekyll file
+        run: echo "" > ./build/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
