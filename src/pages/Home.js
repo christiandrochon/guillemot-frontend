@@ -30,8 +30,8 @@ class Home extends Component {
 
 
                         <div className="container-marges-texte">
-                            <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale qui se perpétue de père en fils
-                                depuis cinq générations.
+                            <Typography variant="h5" className="pb-5">SARL GUILLEMOT Père et fils est une entreprise familiale de maçonnerie qui oeuvre dans la
+                                construction et la rénovation depuis cinq générations.
                                 <br/>
                                 Basée à Talais en Médoc, l'entreprise compte quatre ouvriers spécialisés dans divers domaines de la
                                 construction.</Typography>
