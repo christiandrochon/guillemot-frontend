@@ -10,17 +10,18 @@ class Charpente extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Charpente, couverture', 'Solutions complètes pour vos projets de toiture et d\'aménagement extérieur');
+        updateHeaderDetails('Charpente, couverture', 'Solutions complètes pour vos projets de toiture et d\'aménagement extérieur', '/template/assets/img/charpente_bois.jpg');
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
             <section className="page-section bg-light">
                 <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
                         {/*<h2 className="section-heading text-uppercase">Charpente, couverture</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Solutions complètes pour vos projets de toiture et d'aménagement*/}
                         {/*    extérieur.</h3>*/}
@@ -55,7 +56,7 @@ class Charpente extends Component {
                             <p>Traitement des toitures</p>
                         </div>
                         <svg><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/charpente_bois.jpg" alt="Charpente" className="img-fluid logo-img-fluid px-5"/>
+                        <img src="/template/assets/img/charpente-fermette-bouaye-2.jpg" alt="Charpente" className="img-fluid logo-img-fluid px-5"/>
                     </div>
                 </div>
             </section>

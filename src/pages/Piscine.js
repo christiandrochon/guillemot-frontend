@@ -10,17 +10,18 @@ class Piscine extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure');
+        updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure', '/template/assets/img/infinity-pool-2396808_960_720.jpg');
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
             <section className="page-section bg-light">
                 <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
                         {/*<h2 className="section-heading text-uppercase">Piscine</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>*/}
 

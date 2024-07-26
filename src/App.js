@@ -15,10 +15,10 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     /*Declaration d'une constante pour les details du header*/
-    const [headerDetails, setHeaderDetails] = useState({titre: '', sousTitre: ''});
+    const [headerDetails, setHeaderDetails] = useState({titre: '', sousTitre: '', imgurl: ''});
     // Fonction de mise à jour des variables
-    const updateHeaderDetails = (titre, sousTitre) => {
-        setHeaderDetails({titre, sousTitre});
+    const updateHeaderDetails = (titre, sousTitre, imgurl) => {
+        setHeaderDetails({titre, sousTitre, imgurl});
     };
 
 

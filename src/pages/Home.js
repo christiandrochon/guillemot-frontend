@@ -13,11 +13,13 @@ class Home extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('SARL GUILLEMOT Père et fils', 'Votre expert en construction et rénovation');
+        if (typeof updateHeaderDetails === 'function') {
+            updateHeaderDetails('SARL GUILLEMOT Père et fils', 'Votre expert en construction et rénovation', '/template/assets/img/mirror-construction-trowel-masonry-66761.jpg');
+        }
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
 
             <section className="page-section bg-light">
@@ -25,6 +27,7 @@ class Home extends Component {
                     <div className="text-center pb-5">
                         <div className="masthead-heading">{titre}</div>
                         <div className="masthead-subheading text-uppercase">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
                         {/*<h2 className="section-heading text-uppercase">SARL GUILLEMOT Père et fils</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Votre expert en construction et rénovation : maçonnerie, charpente, piscines et taille de*/}
                         {/*    pierre sur mesure.</h3>*/}

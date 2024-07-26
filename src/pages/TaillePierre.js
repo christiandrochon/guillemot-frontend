@@ -10,17 +10,18 @@ class TaillePierre extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Tailleur de pierre', 'Travail sur pierres et briquettes soulacaises');
+        updateHeaderDetails('Tailleur de pierre', 'Travail sur pierres et briquettes soulacaises', '/template/assets/img/tailleur-pierre.jpeg');
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
             <section className="page-section bg-light">
                 <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
 
                         <div className="">
                             <Typography variant="h5" className="pb-5">Artisanat et expertise pour des réalisations sur mesure et de haute qualité.</Typography>

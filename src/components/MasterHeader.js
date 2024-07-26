@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import DescriptionIcon from '@mui/icons-material/Description';
 import HeaderContext from "./HeaderContext";
+import {imageListClasses} from "@mui/material";
 
 class MasterHeader extends Component {
 
@@ -15,9 +16,10 @@ class MasterHeader extends Component {
         // Ensure titre and sousTitre are strings before rendering
         const titre = typeof headerDetails.titre === 'string' ? headerDetails.titre : '';
         const sousTitre = typeof headerDetails.sousTitre === 'string' ? headerDetails.sousTitre : '';
+        const imgurl = typeof headerDetails.imgurl === 'string' ? headerDetails.imgurl : '';
 
         return (
-            <header className="masthead">
+            <header className="masthead" style={{backgroundImage: `url(${imgurl})`}}>
                 <div className="container">
 
                     <div className="masthead-heading text-uppercase">{titre}</div>
