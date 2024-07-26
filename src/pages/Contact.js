@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import HeaderContext from "./../components/HeaderContext";
 
 class Contact extends Component {
