@@ -21,7 +21,7 @@ class Home extends Component {
         return (
 
             <section className="page-section bg-light">
-                <div className="px-5">
+                <div className="">
                     <div className="text-center pb-5">
                         <div className="masthead-heading">{titre}</div>
                         <div className="masthead-subheading text-uppercase">{sousTitre}</div>
