@@ -37,7 +37,7 @@ function App() {
 
     return (
         <HeaderContext.Provider value={{headerDetails, updateHeaderDetails}}>
-            <BrowserRouter>
+            <BrowserRouter basename="/guillemot-frontend">
                 <MasterHeader/>
                 <ScrollToTop/>
                 <div id="page-top">

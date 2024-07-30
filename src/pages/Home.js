@@ -14,7 +14,7 @@ class Home extends Component {
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
         if (typeof updateHeaderDetails === 'function') {
-            updateHeaderDetails('SARL GUILLEMOT Père et fils', 'Votre expert en construction et rénovation', '/template/assets/img/mirror-construction-trowel-masonry-66761.jpg');
+            updateHeaderDetails('SARL GUILLEMOT Père et fils', 'Votre expert en construction et rénovation', `${process.env.PUBLIC_URL}//template/assets/img/mirror-construction-trowel-masonry-66761.jpg`);
         }
     }
 
