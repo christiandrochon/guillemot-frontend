@@ -27,7 +27,7 @@ function App() {
         {path: '/guillemot-frontend/', element: <Home/>},
         {path: '/guillemot-frontend/maconnerie', element: <Maconnerie/>},
         {path: '/guillemot-frontend/charpente', element: <Charpente/>},
-        {path: '//guillemot-frontendtaillepierre', element: <TaillePierre/>},
+        {path: '//guillemot-frontend/taillepierre', element: <TaillePierre/>},
         {path: '/guillemot-frontend/piscine', element: <Piscine/>},
         // {path: '/apropos', element: <About/>},
         // {path: '/team', element: <Team/>},
