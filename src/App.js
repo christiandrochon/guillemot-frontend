@@ -24,14 +24,14 @@ function App() {
 
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
-        {path: '/', element: <Home/>},
-        {path: '/maconnerie', element: <Maconnerie/>},
-        {path: '/charpente', element: <Charpente/>},
-        {path: '/taillepierre', element: <TaillePierre/>},
-        {path: '/piscine', element: <Piscine/>},
+        {path: '/guillemot-frontend/', element: <Home/>},
+        {path: '/guillemot-frontend/maconnerie', element: <Maconnerie/>},
+        {path: '/guillemot-frontend/charpente', element: <Charpente/>},
+        {path: '//guillemot-frontendtaillepierre', element: <TaillePierre/>},
+        {path: '/guillemot-frontend/piscine', element: <Piscine/>},
         // {path: '/apropos', element: <About/>},
         // {path: '/team', element: <Team/>},
-        {path: '/contact', element: <Contact/>},
+        {path: '/guillemot-frontend/contact', element: <Contact/>},
 
     ];
 
@@ -86,13 +86,13 @@ function App() {
                     <div className="">
                         <Routes>
                             <Route exact path="/" element={<Home/>}/>
-                            <Route path="/maconnerie" element={<Maconnerie/>}/>
-                            <Route path="/charpente" element={<Charpente/>}/>
-                            <Route path="/piscine" element={<Piscine/>}/>
-                            <Route path="/taillepierre" element={<TaillePierre/>}/>
+                            <Route path="/guillemot-frontend/maconnerie" element={<Maconnerie/>}/>
+                            <Route path="/guillemot-frontend/charpente" element={<Charpente/>}/>
+                            <Route path="/guillemot-frontend/piscine" element={<Piscine/>}/>
+                            <Route path="/guillemot-frontend/taillepierre" element={<TaillePierre/>}/>
                             {/*<Route path="/apropos" element={<About/>}/>*/}
                             {/*<Route path="/team" element={<Team/>}/>*/}
-                            <Route path="/contact" element={<Contact/>}/>
+                            <Route path="/guillemot-frontend/contact" element={<Contact/>}/>
                         </Routes>
                     </div>
                 </div>
