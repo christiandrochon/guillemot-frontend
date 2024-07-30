@@ -1,6 +1,6 @@
 {
   "homepage": "https://christiandrochon.github.io/guillemot-frontend/",
-  "name": "guillemot",
+  "name": "guillemot-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
