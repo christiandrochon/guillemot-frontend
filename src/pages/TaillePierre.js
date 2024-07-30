@@ -10,19 +10,20 @@ class TaillePierre extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Tailleur de pierre', 'Travail sur pierres et briquettes soulacaises');
+        updateHeaderDetails('Tailleur de pierre', 'Travail sur pierres et briquettes soulacaises', '/template/assets/img/tailleur-pierre.jpeg');
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
             <section className="page-section bg-light">
-                <div className="container">
+                <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
 
-                        <div className="container-marges-texte">
+                        <div className="">
                             <Typography variant="h5" className="pb-5">Artisanat et expertise pour des réalisations sur mesure et de haute qualité.</Typography>
 
                             <h4>Placage de Murs et Taille de Pierre</h4>
@@ -40,8 +41,8 @@ class TaillePierre extends Component {
                                 appuis de fenêtres sur mesure, alliant tradition et savoir-faire artisanal.</p>
                         </div>
 
-                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/murs-porteurs_monolithe_1.jpg" alt="statues" className="img-fluid"/>
+                        <svg><DashboardRoundedIcon/></svg>
+                        <img src="/template/assets/img/murs-porteurs_monolithe_1.jpg" alt="statues" className="img-fluid logo-img-fluid px-5"/>
                     </div>
                 </div>
             </section>

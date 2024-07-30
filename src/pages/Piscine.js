@@ -10,21 +10,22 @@ class Piscine extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure');
+        updateHeaderDetails('Piscine', 'Conception et réalisation de piscines enterrées sur mesure', '/template/assets/img/infinity-pool-2396808_960_720.jpg');
     }
 
     render() {
-        const {titre, sousTitre} = this.context;
+        const {titre, sousTitre, imgurl} = this.context;
         return (
             <section className="page-section bg-light">
-                <div className="container">
+                <div className="">
                     <div className="text-center">
                         <div className="masthead-heading text-uppercase">{titre}</div>
                         <div className="masthead-subheading">{sousTitre}</div>
+                        <div className="masthead-img">{imgurl}</div>
                         {/*<h2 className="section-heading text-uppercase">Piscine</h2>*/}
                         {/*<h3 className="section-subheading text-muted">Conception et réalisation de piscines enterrées sur mesure.</h3>*/}
 
-                        <div className="container-marges-texte">
+                        <div className="">
                             <Typography variant="h5" className="pb-5">Transformez votre jardin en oasis de détente avec nos piscines sur mesure, conçues et
                                 construites avec l'expertise de notre entreprise de maçonnerie.</Typography>
 
@@ -52,8 +53,8 @@ class Piscine extends Component {
                                 spécifiques.</p>
                         </div>
 
-                        <svg className="w-100 my-5"><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid"/>
+                        <svg><DashboardRoundedIcon/></svg>
+                        <img src="/template/assets/img/ladder-6798998_960_720.jpg" alt="Description de l'image" className="img-fluid logo-img-fluid px-5"/>
                     </div>
                 </div>
             </section>

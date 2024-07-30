@@ -10,14 +10,17 @@ import Piscine from "./pages/Piscine";
 import TaillePierre from "./pages/TaillePierre";
 import Contact from "./pages/Contact";
 import HeaderContext from "./components/HeaderContext";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
     /*Declaration d'une constante pour les details du header*/
-    const [headerDetails, setHeaderDetails] = useState({titre: '', sousTitre: ''});
+    const [headerDetails, setHeaderDetails] = useState({titre: '', sousTitre: '', imgurl: ''});
     // Fonction de mise à jour des variables
-    const updateHeaderDetails = (titre, sousTitre) => {
-        setHeaderDetails({titre, sousTitre});
+    const updateHeaderDetails = (titre, sousTitre, imgurl) => {
+        setHeaderDetails({titre, sousTitre, imgurl});
     };
+
 
     /*Declaration d'une' constante pour les key des composants*/
     const routs = [
@@ -36,6 +39,7 @@ function App() {
         <HeaderContext.Provider value={{headerDetails, updateHeaderDetails}}>
             <BrowserRouter>
                 <MasterHeader/>
+                <ScrollToTop/>
                 <div id="page-top">
                     {/*LINK fournit le lien vers le composant*/}
                     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -79,7 +83,7 @@ function App() {
 
                     {/*SWITCH fournit la route du composant*/
                     }
-                    <div className="container">
+                    <div className="">
                         <Routes>
                             <Route exact path="/" element={<Home/>}/>
                             <Route path="/maconnerie" element={<Maconnerie/>}/>
