@@ -79,7 +79,7 @@ class Home extends Component {
                             {/*PORTFOLIO ITME 1*/}
                             <div className="portfolio-item">
                                 <Link to="/maconnerie" className="portfolio-link">
-                                    <img className="img-fluid" src="/template/assets/img/0506aff5-461d-4dd7-a091-2c0b3340f32b-1600-1920w.webp" alt="img 1"/>
+                                    <img className="img-fluid" src={`${process.env.PUBLIC_URL}/template/assets/img/0506aff5-461d-4dd7-a091-2c0b3340f32b-1600-1920w.webp`} alt="img 1"/>
                                 </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Maçonnerie</div>
@@ -91,7 +91,7 @@ class Home extends Component {
                             {/*PORTFOLIO ITEM 2*/}
                             <div className="portfolio-item">
                                 <Link to="/charpente" className="portfolio-link">
-                                    <img className="img-fluid" src="/template/assets/img/1632832547-charpente-bois-min.avif" alt="img 2"/>
+                                    <img className="img-fluid" src={`${process.env.PUBLIC_URL}/template/assets/img/1632832547-charpente-bois-min.avif`} alt="img 2"/>
                                 </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Charpente, couverture</div>
@@ -103,7 +103,7 @@ class Home extends Component {
                             {/*PORTFOLIO ITEM 3*/}
                             <div className="portfolio-item">
                                 <Link to="/piscine" className="portfolio-link">
-                                    <img className="img-fluid" src="/template/assets/img/infinity-pool-2396808_960_720.jpg" alt="img 3"/>
+                                    <img className="img-fluid" src={`${process.env.PUBLIC_URL}/template/assets/img/infinity-pool-2396808_960_720.jpg`} alt="img 3"/>
                                 </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Piscine</div>
@@ -115,7 +115,7 @@ class Home extends Component {
                             {/*PORTFOLIO ITEM 4*/}
                             <div className="portfolio-item">
                                 <Link to="/taillepierre" className="portfolio-link">
-                                    <img className="img-fluid" src="/template/assets/img/tailleur-pierre.jpeg" alt="..."/>
+                                    <img className="img-fluid" src={`${process.env.PUBLIC_URL}/template/assets/img/tailleur-pierre.jpeg`} alt="..."/>
                                 </Link>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Tailleur de pierre</div>
