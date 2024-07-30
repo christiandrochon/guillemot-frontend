@@ -11,7 +11,8 @@ class Maconnerie extends Component {
         window.scrollTo(0, 0);
         //recuperer la fonction updateHeaderDetails du contexte
         const {updateHeaderDetails} = this.context;
-        updateHeaderDetails('Maçonnerie', 'Travaux de construction et de démolition', '/template/assets/img/maconnerie.webp');
+        // updateHeaderDetails('Maçonnerie', 'Travaux de construction et de démolition', '/template/assets/img/maconnerie.webp');
+        updateHeaderDetails('Maçonnerie', 'Travaux de construction et de démolition', `${process.env.PUBLIC_URL}/template/assets/img/maconnerie.webp`);
     }
 
     render() {
@@ -44,7 +45,8 @@ class Maconnerie extends Component {
                                 matériaux et des techniques de construction.</p>
                         </div>
                         <svg><DashboardRoundedIcon/></svg>
-                        <img src="/template/assets/img/60728329_l.jpg" alt="chantier" className="img-fluid logo-img-fluid px-5"/>
+                        {/*<img src="/template/assets/img/60728329_l.jpg" alt="chantier" className="img-fluid logo-img-fluid px-5"/>*/}
+                        <img src={`${process.env.PUBLIC_URL}/template/assets/img/60728329_l.jpg`} alt="chantier" className="img-fluid logo-img-fluid px-5"/>
                     </div>
                 </div>
             </section>
